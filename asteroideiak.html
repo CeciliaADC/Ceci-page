@@ -155,6 +155,32 @@
         text-decoration: underline;
         }
 
+        /* Buttons */
+
+        .buttons {
+        display: flex;
+        justify-content: center; /* centers horizontally */
+        margin: 20px 0;
+        }
+
+        .buttons a {
+            display: inline-block;
+            text-decoration: none;
+            color:#7ca2c6;
+            background: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin: 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .buttons a:hover {
+            background: #acd7ff;
+            color: #fff;
+        }
+
+
     </style>
 </head>
 <body>
@@ -166,58 +192,24 @@
         <br>
         <br>
         <br>
-        <h1>My PhD Thesis</h1>
+        <h1>The "Asteroideiak" Initiative</h1>
         <br>
 
-        <p>Hello! Welcome to my thesis page. Here I share my PhD project within the EDUCADO program, where I study faint structures in CO spectral-line datacubes from ALMA. My goal is to detect and analyse subtle features in galaxies that are often hidden in traditional data analysis.</p>
+        <p>I'm part of Asteroideiak, a science outreach initiative we created with the idea of bringing physics and astronomy closer to people, and of keeping science alive in Basque, a language many of us sadly don't often get to use in our careers.</p>
         <br>
-        <br>
-        <h2>Project Summary</h2>
-        <br>
-        <p>My project is all about uncovering faint, one-dimensional structures in high-resolution astronomical datacubes. I combine data cleaning and processing with a machine learning toolbox called <strong><a href="https://www.sciencedirect.com/science/article/pii/S2213133722000725?via%3Dihub" target="_blank">1‑DREAM</a></strong> (Canducci et al. 2022) and kinematic modelling using <strong><a href="https://doi.org/10.48550/arXiv.1505.07834" target="_blank">BBarolo</a></strong> (Enrico & Fraternali 2015c).</p>
-
-        <p>First, I transform a galaxy datacube (like NGC 4303) into a <em>point cloud</em>. This allows 1‑DREAM to detect filaments that are hard to spot otherwise. The data is carefully cleaned, normalised, and stretched to reveal faint structures while keeping the bright regions in check.</p>
-
-        <figure class="interactive-figure" style="text-align:center; margin:20px 0; display:flex; flex-direction:column; align-items:center;">
-            <iframe src="interactive_cube.html" style="width:95%; height:650px; border:none; border-radius:10px;"></iframe>
-            <figcaption style="color: #fff; margin-top: 8px; font-style: italic;">
-                Interactive visualisation of the NGC 4303 point cloud.
-            </figcaption>
-        </figure>
-
-
-        <br>
-        <p>Then, 1‑DREAM identifies filamentary structures in the point cloud.<p>
-
-        <br>
-
-        <figure class="interactive-figure" style="text-align:center; margin:20px 0; display:flex; flex-direction:column; align-items:center;">
-            <iframe src="PointCloud__ngc2775_ns_fc112-286_we5_str_asin_minmax_sig3_coef3_voxcube__pn100__ds0.1__log_std__laat0.05_0.15__smooth_interactive_pc_1D.html" style="width:95%; height:650px; border:none; border-radius:10px;"></iframe>
-            <figcaption style="color: #fff; margin-top: 8px; font-style: italic;">
-                Interactive visualisation of the NGC 2775 point cloud with filamentary structures detected by 1-DREAM overlaid.
-            </figcaption>
-        </figure>
-        <br>
-
-        </p> This is followed by BBarolo modelling, which produces residual velocity cubes. Comparing the filaments with the residuals helps validate that the detected structures are real and physically meaningful.</p>
-        <br>
-        <div class="video-container" style="text-align:center; margin:20px 0; display:flex; flex-direction:column; align-items:center;">
-            <img src="cubes_comparison_1.11e_tsp.gif" 
-                 alt="Video visualisation of the NGC 4303 ALMA datacube"
-                 style="width:100%; height:auto;">
-            <figcaption style="color: #fff; margin-top: 8px; font-style: italic;">
-                Video visualisation of the NGC 4303 ALMA datacube across all spectral channels, showing the BBarolo kinematic model and the resulting residuals.
-            </figcaption>
-        </div>
+        <p> We're a team of ten, and every week we share outreach articles on all kinds of science topics: mostly physics and astrophysics, but also computation, biology, and mathematics.</p>
         
         <br>
 
-        <h2>Future Ideas</h2>
-        <ul>
-            <li>Automate the 1-DREAM and BBarolo workflow using AI and machine learning.</li>
-            <li>Develop a front-end to easily explore filamentary structures in datacubes.</li>
-        </ul>
-
+        <div class="image-container" style="text-align:center; margin:20px 0; display:flex; flex-direction:column; align-items:center;">
+            <img src="asteroideiak.png" 
+                 alt="Video visualisation of the NGC 4303 ALMA datacube"
+                 style="width:30%; height:auto;">
+        </div>
+        <br>
+        <div class="buttons">
+            <a href="https://www.asteroideiak.eus">Asteroideiak</a>
+        </div>
     </div>
 
     <script>
@@ -284,5 +276,6 @@
             showSlide();
         }
     </script>
+
 </body>
 </html>
