@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cecilia's Thesis</title>
+    <title>Asteroideiak</title>
     <style>
         /* Reset */
         * {
@@ -62,6 +62,19 @@
             line-height: 1.6;
             margin-bottom: 15px;
         }
+
+        .page-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .page-title img {
+            height: 40px;          /* small, inline logo */
+            width: auto;
+            vertical-align: middle;
+        }
+
 
         .back-link {
             position: absolute;
@@ -211,7 +224,7 @@
         }
 
         .article-text {
-            padding: 15px;
+            padding: 0px 15px 15px 15px;
         }
 
         .article-text h3 {
@@ -221,6 +234,7 @@
         }
 
         .article-text p {
+            text-align: justify;
             font-size: 0.95em;
             line-height: 1.5;
             color: #e0e0e0;
@@ -239,35 +253,33 @@
         <br>
         <br>
         <br>
-        <h1>The "Asteroideiak" Initiative</h1>
+        <h1 class="page-title">
+            The "Asteroideiak" Initiative
+            <img src="asteroideiak.png" alt="Asteroideiak logo">
+        </h1>
+        
         <br>
 
         <p>I'm part of Asteroideiak, a science outreach initiative we created with the idea of bringing physics and astronomy closer to people, and of keeping science alive in Basque, a language many of us sadly don't often get to use in our careers.</p>
         <br>
         <p> We're a team of ten, and every week we share outreach articles on all kinds of science topics: mostly physics and astrophysics, but also computation, biology, and mathematics.</p>
-        
-        <br>
 
-        <div class="image-container" style="text-align:center; margin:20px 0; display:flex; flex-direction:column; align-items:center;">
-            <img src="asteroideiak.png" 
-                 alt="Video visualisation of the NGC 4303 ALMA datacube"
-                 style="width:30%; height:auto;">
-        </div>
         <br>
         <div class="buttons">
             <a href="https://www.asteroideiak.eus">Asteroideiak</a>
         </div>
+        <br>
         <div class="article-cards">
 
             <a class="article-card" 
                href="https://www.asteroideiak.eus/post/galaxien-sailkapen-gida-forma-egitura-eta-ezaugarriak"
                target="_blank">
-                <img src="galaxies_classification.jpg" alt="Galaxy classification">
+                <img src="galaxy.jpg" alt="Galaxy classification">
                 <div class="article-text">
-                    <h3>Galaxien sailkapena</h3>
+                    <h3>Galaxien Sailkapen Gida: Forma, Egitura eta Ezaugarriak</h3>
                     <p>
-                        Galaxiak ez dira denak berdinak. Haien forma, egitura eta ezaugarriak
-                        askotarikoak dira, eta horien sailkapenak unibertsoa ulertzen laguntzen digu…
+                        Gaur egun, zuk eta biok badakigu galaxiak unibertso osoan zehar dauden egitura 
+                        erraldoiak direla, baina duela mende bat astronomoak oraindik ez zeuden...
                     </p>
                 </div>
             </a>
@@ -275,12 +287,12 @@
             <a class="article-card" 
                href="https://www.asteroideiak.eus/post/materia-iluna-unibertsoaren-masa-ezkutua"
                target="_blank">
-                <img src="dark_matter.jpg" alt="Dark matter">
+                <img src="dmgif.gif" alt="Dark matter">
                 <div class="article-text">
-                    <h3>Materia iluna</h3>
+                    <h3>Materia iluna: unibertsoaren masa ezkutua</h3>
                     <p>
-                        Unibertsoaren masa gehiena ikusezina da. Materia ilunak grabitatearen bidez
-                        eragiten du, baina oraindik ez dakigu zertaz osatua dagoen…
+                        Harrigarria bada ere, izarrak, planetak, animaliak eta pertsonak osatzen dituen 
+                        materia ez da oso ohikoa. Unibertsoaren % 5 inguru bakarrik da materia barionikoa...
                     </p>
                 </div>
             </a>
