@@ -180,6 +180,53 @@
             color: #fff;
         }
 
+        .article-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .article-card {
+            width: 260px;               /* vertical rectangle */
+            height: 420px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+        }
+
+        .article-card img {
+            width: 100%;
+            height: 45%;
+            object-fit: cover;
+        }
+
+        .article-text {
+            padding: 15px;
+        }
+
+        .article-text h3 {
+            color: #ffdd59;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .article-text p {
+            font-size: 0.95em;
+            line-height: 1.5;
+            color: #e0e0e0;
+        }
+
+
 
     </style>
 </head>
@@ -210,6 +257,36 @@
         <div class="buttons">
             <a href="https://www.asteroideiak.eus">Asteroideiak</a>
         </div>
+        <div class="article-cards">
+
+            <a class="article-card" 
+               href="https://www.asteroideiak.eus/post/galaxien-sailkapen-gida-forma-egitura-eta-ezaugarriak"
+               target="_blank">
+                <img src="galaxies_classification.jpg" alt="Galaxy classification">
+                <div class="article-text">
+                    <h3>Galaxien sailkapena</h3>
+                    <p>
+                        Galaxiak ez dira denak berdinak. Haien forma, egitura eta ezaugarriak
+                        askotarikoak dira, eta horien sailkapenak unibertsoa ulertzen laguntzen digu…
+                    </p>
+                </div>
+            </a>
+        
+            <a class="article-card" 
+               href="https://www.asteroideiak.eus/post/materia-iluna-unibertsoaren-masa-ezkutua"
+               target="_blank">
+                <img src="dark_matter.jpg" alt="Dark matter">
+                <div class="article-text">
+                    <h3>Materia iluna</h3>
+                    <p>
+                        Unibertsoaren masa gehiena ikusezina da. Materia ilunak grabitatearen bidez
+                        eragiten du, baina oraindik ez dakigu zertaz osatua dagoen…
+                    </p>
+                </div>
+            </a>
+        
+        </div>
+        
     </div>
 
     <script>
